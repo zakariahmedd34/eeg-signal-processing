@@ -1,0 +1,29 @@
+[project]
+name = "eeg-signal-processing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Zakaria", email = "Zakaria.ahmed@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "mne>=1.13.2",
+    "mne-bids>=0.20.0",
+    "mne-qt-browser>=0.7.5",
+    "nibabel>=5.5.0",
+    "numpy>=2.5.5",
+    "pyqt6>=6.12.1",
+    "python-picard>=0.8.2",
+    "pyvista>=0.49.2",
+    "pyvistaqt>=0.13.2",
+    "scipy>=1.18.1",
+]
+
+[project.scripts]
+eeg-signal-processing = "eeg_signal_processing:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
